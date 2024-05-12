@@ -17,6 +17,7 @@
 		      <th>お問い合わせ内容</th>
 		    </tr>		    
 		    <s:iterator value="inquiryDTOList">
+		      <tr>
 		        <td><s:property value="name"/></td>
 		        
 		        <s:if test='qtype=="company"'>
@@ -29,7 +30,8 @@
 		          <td>アフターサポートについて</td>
 		        </s:if>
 		        <td><s:property value="body"/></td>
-		      </s:iterator>
+		        </tr>
+		     </s:iterator>
 		  </tbody> 
 		</table>
 	</body>
